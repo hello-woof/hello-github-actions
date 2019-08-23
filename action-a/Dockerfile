@@ -10,7 +10,7 @@ LABEL "homepage"="http://github.com/actions"
 LABEL "maintainer"="Octocat <octocat@github.com>"
 
 RUN apt-get update && \
-      apt-get install bsdmainutils
+      apt-get install -y bsdmainutils
 
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]

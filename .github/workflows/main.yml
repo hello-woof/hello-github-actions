@@ -9,3 +9,4 @@ jobs:
     - uses: ./action-a
       env:
         MY_NAME: "Mona"
+        MY_SECRET: ${{ secrets.FOO_SECRET }}

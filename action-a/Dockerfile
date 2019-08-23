@@ -9,7 +9,7 @@ LABEL "repository"="http://github.com/octocat/hello-world"
 LABEL "homepage"="http://github.com/actions"
 LABEL "maintainer"="Octocat <octocat@github.com>"
 
-RUN apt-get update \
+RUN apt-get update && \
       apt-get install bsdmainutils
 
 ADD entrypoint.sh /entrypoint.sh
